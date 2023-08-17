@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Node-api</title>
+        <link rel="author" href="humans.txt">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    </head>
+    <body>
+        <section class="container">
+            <h1>Consommations des endpoints</h1>
+            <h3>Affichage de la liste des parents</h3>
+
+            <table class="table table-bordered border-primary">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nom</th>
+                        <th>Prenom</th>
+                        <th>Nombre de fils</th>
+                    </tr>
+                </thead>
+                <tbody id="parentList">
+
+                </tbody>
+            </table>
+        </section>
+
+
+        <section class="container">
+            <h3>Affichage de la liste des fils</h3>
+
+            <table class="table table-bordered border-primary">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nom</th>
+                        <th>Prenom</th>
+                        <th>PereId</th>
+                    </tr>
+                </thead>
+                <tbody id="filsList">
+
+                </tbody>
+            </table>
+        </section>
+
+
+        <section class="container">
+            <div>
+                <h2>Ajout pères</h2>
+            </div>
+
+          <div class="mb-3">
+            <label for="nom" class="form-label">Nom</label>
+            <input class="form-control" id="nomPere">
+          </div>
+
+          <div class="mb-3">
+            <label for="prenom" class="form-label">Prenom</label>
+            <input class="form-control" id="prenomPere">
+          </div>
+
+          <button id="addPere" class="btn btn-primary">Enregistrer</button>
+
+        </section>
+
+            <section class="container">
+            <div>
+                <h2>Ajout fils</h2>
+            </div>
+
+          <div class="mb-3">
+            <label for="nom" class="form-label">Nom</label>
+            <input class="form-control" id="nomFils">
+          </div>
+
+          <div class="mb-3">
+            <label for="prenom" class="form-label">Prenom</label>
+            <input class="form-control" id="prenomFils">
+          </div>
+
+          <div class="mb-3">
+            <label for="PereId" class="form-label">PereId</label>
+            <select class="form-control" id="pereFils"></select>
+          </div>
+
+
+          <button id="addFils" class="btn btn-primary">Enregistrer</button>
+
+        </section>
+
+
+
+
+
+        <div>
+            <br>
+            <br>
+        </div>
+
+
+        <script src="script.js"></script>
+    </body>
+</html>
